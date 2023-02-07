@@ -1,44 +1,44 @@
 [
-    {
-        "id": 1,
-        "precio": 100,
-        "title": "Producto 1",
-        "image": "img/product.jpg",
-        "stock": 5
-    },
-    {
-        "id": 2,
-        "precio": 200,
-        "title": "Producto 2",
-        "image": "img/product.jpg",
-        "stock": 5
-    },
-    {
-        "id": 3,
-        "precio": 300,
-        "title": "Producto 3",
-        "image": "img/product.jpg",
-        "stock": 5
-    },
-    {
-        "id": 4,
-        "precio": 400,
-        "title": "Producto 4",
-        "image": "https://m.media-amazon.com/images/I/61eIVXuxyAS._AC_SY355_.jpg",
-        "stock": 5
-    },
-    {
-        "id": 5,
-        "precio": 500,
-        "title": "Producto 5",
-        "image": "https://m.media-amazon.com/images/I/61eIVXuxyAS._AC_SY355_.jpg",
-        "stock": 5
-    },
-    {
-        "id": 6,
-        "precio": 600,
-        "title": "Producto 6",
-        "image": "https://m.media-amazon.com/images/I/61eIVXuxyAS._AC_SY355_.jpg",
-        "stock": 5
-    }
+  {
+    "id": 1,
+    "precio": 100,
+    "title": "Producto 1",
+    "image": "img/product.jpg",
+    "stock": 5
+  },
+  {
+    "id": 2,
+    "precio": 200,
+    "title": "Producto 2",
+    "image": "img/product.jpg",
+    "stock": 5
+  },
+  {
+    "id": 3,
+    "precio": 300,
+    "title": "Producto 3",
+    "image": "img/product.jpg",
+    "stock": 5
+  },
+  {
+    "id": 4,
+    "precio": 400,
+    "title": "Producto 4",
+    "image": "https://m.media-amazon.com/images/I/61eIVXuxyAS._AC_SY355_.jpg",
+    "stock": 5
+  },
+  {
+    "id": 5,
+    "precio": 500,
+    "title": "Producto 5",
+    "image": "https://m.media-amazon.com/images/I/61eIVXuxyAS._AC_SY355_.jpg",
+    "stock": 5
+  },
+  {
+    "id": 6,
+    "precio": 600,
+    "title": "Producto 6",
+    "image": "https://m.media-amazon.com/images/I/61eIVXuxyAS._AC_SY355_.jpg",
+    "stock": 5
+  }
 ]

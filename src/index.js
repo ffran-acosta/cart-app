@@ -2,6 +2,8 @@
 const express = require('express');
 const app = express();
 const {join} = require("path");
+
+//json
 app.use(express.json()); 
 
 //server

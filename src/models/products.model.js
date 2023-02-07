@@ -11,6 +11,7 @@ const model = {
         let all = model.all();
         return all.find(e => e.id == id)
     },
+    
     write: (data) => {
         let file = resolve(__dirname,'../data','products.json')
         let json = JSON.stringify(data,null,2)

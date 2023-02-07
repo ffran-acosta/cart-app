@@ -8,12 +8,12 @@ const fetchData = async () => {
         crearProductos(data);
         agregarDetect(data);
         pagar();
-        //console.log(data);  
     } catch (error){
         console.log(error);
     }
 }
 
+//
 const contenedorProductos = document.querySelector("#contenedor-productos");
 const crearProductos = (data) => {
     const template = document.querySelector("#id-content").content;
@@ -48,8 +48,6 @@ const agregarDetect = (data) => {
             const total = Object.values(carrito).reduce((acc, {cantidad, precio}) => acc + cantidad * precio, 0);
             botonPagar.innerHTML = "Pagar " + total;
             carritoBack.push(product.id);
-            //console.log(carrito);
-            console.log(product);
         })
     })
 }
@@ -65,8 +63,6 @@ const pagar = () => {
     botonPagar.addEventListener("click", () =>{
         const total = Object.values(carrito).reduce((acc, {cantidad, precio}) => acc + cantidad * precio, 0);
         botonPagar.innerHTML = "Pagar";
-        console.log("Tenes que pagar $"+total);
-        console.log(carrito);
         pagarBack();
         detalleBack();
         carritoBack = [];
@@ -76,26 +72,26 @@ const pagar = () => {
 
 const pagarBack = async () => {
     try{
-        const pago = await(await fetch("/api/pagar",{
+        await fetch("/api/pagar",{
             method: "post",
             body: JSON.stringify(carritoBack),
             headers: 
                 {
                     "Content-Type": "application/json"
                 },
-            })).json();  
+            })
     } catch {
         alert("Sin Stock, por favor actualice la página");
     }
 }
 
 const detalleBack = async () => {
-    const a = await(await fetch("/api/detalle",{
+    await fetch("/api/detalle",{
         method: "post",
         body: JSON.stringify(carrito),
         headers: 
             {
                 "Content-Type": "application/json"
             },
-        })).json();            
+        });            
 }
