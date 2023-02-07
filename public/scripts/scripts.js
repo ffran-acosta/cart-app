@@ -62,6 +62,7 @@ const blockBtn = (product, btn) => {
 const pagar = () => {
     botonPagar.addEventListener("click", () =>{
         const total = Object.values(carrito).reduce((acc, {cantidad, precio}) => acc + cantidad * precio, 0);
+        alert('Total a pagar: ' + total)
         botonPagar.innerHTML = "Pagar";
         pagarBack();
         detalleBack();
